@@ -109,55 +109,62 @@ if (pregunta10 == 2) {
 alert(`tu resultado es ${contador}`);
 
 
+
+
 let miResultado = prompt("quieres saber a que personaje eres? Pon tu resultado")
 
-while ( miResutado = ">=10" ) {
-    switch (miResultado) {
-        case "1" :
-            alert("Eres igual a Jar Jar Binks");
-            break;
+switch (miResultado) {
+    case "1" :
+        alert("Eres igual a Jar Jar Binks");
+        break;
 
-        case "2" :
-            alert("Eres igual al Capitan Panaka ");
-            break; 
+    case "2" :
+        alert("Eres igual al Capitan Panaka ");
+        break; 
                 
-        case "3" :
-            alert("Eres igual a Rose Tico");
-            break; 
+    case "3" :
+        alert("Eres igual a Rose Tico");
+        break; 
                 
-        case "4" :
-            alert("Eres igual a Finn");
-            break;
+    case "4" :
+        alert("Eres igual a Finn");
+        break;
 
-        case "5" :
-            alert("Eres igual a un stormtrooper");
-            break;
+    case "5" :
+        alert("Eres igual a un stormtrooper");
+        break;
 
-        case "6" :
-            alert("Eres igual a  / Conde Doku");
-            break;
+    case "6" :
+        alert("Eres igual a  / Conde Doku");
+        break;
 
-        case "7" :
-            alert("Eres igual a Ashoka Tano / Kylo Ren");
-            break;
+    case "7" :
+        alert("Eres igual a Ashoka Tano / Kylo Ren");
+        break;
 
-        case "8" :
-            alert("Eres igual Han Solo / Yoda");
-            break
-        case "9" :
-            alert("Eres igual a Palpatine / Obi-Wan Kenobi");
-            break;
+    case "8" :
+        alert("Eres igual Han Solo / Yoda");
+        break
+    case "9" :
+        alert("Eres igual a Palpatine / Obi-Wan Kenobi");
+        break;
 
-        case "10" :
-            alert("Eres igual a Anakin,Lord Vader / Luke skywalker");
-            break;        
+    case "10" :
+        alert("Eres igual a Anakin,Lord Vader / Luke skywalker");
+        break;        
     
-        default: 
-            alert("no ingresaste un numnero correcto")
-            break;
+    default: 
+        alert("no ingresaste un numnero correcto")
+        break;
+    }
+
+    while (isNaN(parseInt(miResultado)) || miResultado <= 0 || miResultado > 10) {
+        miResultado = prompt("Ingresaste un dato inválido, escribe un número entre 1 y 10.")
+        break
+        miResultado = prompt("quieres saber a que personaje eres? Pon tu resultado")
     }
    
-}
+
 
 function despedida() {
     let mensaje = `Gracias ${nombre} por jugar a este ping-pong de star wars`;
